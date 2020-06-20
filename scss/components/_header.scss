@@ -1,0 +1,203 @@
+// ================
+//   Header
+// ================
+
+.section-title{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+
+.section-title h1{
+    display: inline-block;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $black;
+    margin: 0 0px 5px;
+    position: relative;
+    padding-bottom: 0px;
+}
+.section-title h1::before{
+    content: '';
+    left:0;
+    position: absolute;
+    height: 2px;
+    right: 30%;
+    background-color: $primary-color;
+    bottom: 0px;
+}
+header{
+    position: absolute;
+    left: 0px;
+    right:0px;
+    border-bottom: 1px solid $top-border;
+    padding: 0px 15px;
+    z-index: 11;
+}
+header.fixed{
+    background-color: $white;
+    position: fixed;
+    border-color:$primary-border;
+    animation: fixHeader 1s ease;
+    z-index: 11;
+}
+@keyframes fixHeader{
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(-0%);
+    }
+}
+header .row{
+    justify-content: space-between;
+    align-items: center;
+}
+header .brand-name a{
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+    color: $white;
+    text-transform: uppercase;
+    position: relative;
+    letter-spacing: 2px;
+}
+header.fixed .brand-name a{
+    color: $black;
+}
+header .brand-name a span{
+    color: $primary-color;
+}
+
+header .navbar ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+header .navbar ul li{
+    display: inline-block;
+    margin-left: 35px;
+    color: $white;
+    font-weight: 400;
+}
+header .navbar ul li a{
+    font-size: 15px;
+    text-decoration: none;
+    line-height: 72px;
+    color: $white;
+    display: block;
+    font-weight: 600;
+    position: relative;
+}
+header .navbar ul li a:hover{
+    color: $primary-color;
+}
+header.fixed .navbar ul li a{
+    color: $black;
+}
+header .navbar ul li a::before{
+    content: '';
+    height: 3px;
+    background-color: $primary-color;
+    width: 0%;
+    position: absolute;
+    right: 0px;
+    bottom: -1px;
+    transition: all.5s ease;
+}
+header.fixed .navbar ul li a::before{
+    background-color: $primary-color;
+}
+header .navbar ul li a:hover::before{
+    width: 100%;
+    left:0;
+}
+.home {
+    min-height: 100vh;
+    background-image: url(/images/2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.home .full-screen{
+    min-height: 100vh;
+}
+.home .home-content{
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.home .home-content .block{
+    flex: 0 0 75%;
+    max-width:75%;
+    padding-left:35px;
+    border-left: 5px solid $primary-color;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+.home .home-content .block h6{
+    color: $white;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+}
+.home .home-content .block h6 span{
+    color: $primary-color;
+}
+.home .home-content .block h1{
+    color: $white;
+    font-size: 70px;
+    font-weight: 600;
+    margin: 0 0 10px;
+    padding: 0px;
+    line-height: 1.2;
+}
+.home .home-content .block h3{
+    color: $white;
+    font-size: 25px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+    
+}
+.home .home-content .block h3 span{
+    color: $primary-color;
+}
+.home .home-content .block .cv-btn{
+    padding-top: 20px;
+}
+.home .home-content .block .cv-btn a{
+    border-radius: 4px;
+    color: $white;
+    border: 1px solid $primary-color;
+    padding: 12px 25px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all .5s ease;
+    background-color: transparent;
+}
+.home .home-content .block .cv-btn a:hover{
+    background-color: $primary-color;
+    color: $black;
+}
+.ham-burger .fa{
+    background-color: $primary-color;
+    height: 30px;
+    width: 35px;
+    font-size: 20px;
+    color: $black;
+    border-radius: 3px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    display:none;
+    border: 1px solid $primary-border;
+}

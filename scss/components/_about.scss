@@ -1,0 +1,106 @@
+/* About Section */
+
+.about-me{
+    padding: 100px 15px;
+    background-color: $white;
+}
+.text-uppercase{
+    text-transform: uppercase!important;
+}
+.about-me .section-title p.small{
+    display: block;
+    font-size: 14px;
+    color: $primary-text;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+.about-me .about-content .img{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+}
+.about-me .about-content .img img{
+    width:100%;
+    display: block;
+    border-radius: 5%;
+}
+.about-me .about-content .text{
+    flex: 0 0 66.66%;
+    max-width: 66.66%;
+    padding-left: 33px;
+}
+.about-me .about-content .text h4{
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0 0 5px;
+    color: $black;
+}
+.about-me .about-content .text h6{
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 0 15px;
+    color: $black;
+}
+.about-me .about-content .text h6 span{
+    color: $primary-color;
+}
+.about-me .about-content .text p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: $primary-text;
+    margin: 0 0 20px;
+}
+.about-me .about-content .text .info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.about-me .about-content .text .info .list{
+    flex: 0 0 calc(50% - 15px);
+    max-width: calc(50% - 15px);
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid $primary-underline;
+    padding-bottom: 10px;
+}
+.about-me .about-content .text .info .list label{
+    padding-right:10px;
+    color: $black;
+    font-weight: 600;
+    font-size: 15px;
+}
+.about-me .about-content .text .info .list p{
+    margin: 0;
+    line-height: 1rem;
+}
+.about-me .about-content .text .social-links{
+    padding-top: 30px;
+}
+.about-me .about-content .text .social-links a{
+    height: 30px;
+    width: 30px;
+    background-color: $black;
+    border-radius: 3px;
+    display: inline-block;
+    line-height: 28px;
+    border: 1px solid $black;
+    text-align: center;
+    margin: 0 1px;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+.about-me .about-content .text .social-links a:hover{
+    //background-color: transparent;
+    background-color: $primary-color;
+}
+.about-me .about-content .text .social-links .fab{
+    color: $white;
+    font-size: 12px;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+.about-me .about-content .text .social-links a:hover .fab{
+    color: $black;
+}

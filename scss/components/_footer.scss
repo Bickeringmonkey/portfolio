@@ -1,0 +1,49 @@
+// ================
+//   Footer
+// ================
+
+footer{
+    padding: 70px 15px;
+    background-color: $main-footer;
+}
+footer .logo {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+    font-size: 45px;
+    color: $white;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+footer span{
+    color: $primary-color;
+}
+footer .social{
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+    padding-top: 15px;
+}
+footer .social a{
+    color: $main-social;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px 12px;
+}
+footer .social a:hover{
+    color: $primary-color;
+}
+
+// copyright
+.copyright{
+    background-color: $main-footer;
+    border-top: 1px solid $footer-border;
+    padding: 15px;
+}
+.copyright p{
+    color: $primary-text;
+    margin: 0;
+    text-align: center;
+    font-weight: 400;
+    font-size: 15px;
+}
